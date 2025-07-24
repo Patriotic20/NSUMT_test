@@ -1,6 +1,5 @@
 
 from pydantic_settings import BaseSettings
-from pydantic import ConfigDict
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -11,7 +10,7 @@ class Settings(BaseSettings):
     DB_PASSWORD: str 
     DB_PORT: str 
     DB_NAME: str 
-    MODE: str
+    # MODE: str
 
     SECRET_KEY: str
     REFRESH_SECRET_KEY : str
